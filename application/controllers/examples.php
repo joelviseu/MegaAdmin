@@ -85,7 +85,6 @@ class Examples extends CI_Controller {
 		/**
 		 * Change In core Grocery Crud To Upload File Via Elfinder
 		 */
-		$image_crud->set_url_field('file_url');
 		$crud->set_field_upload_disk('file_url','myuploads');
 		
 		////////////////////////////////
