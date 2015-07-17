@@ -10,7 +10,11 @@ foreach($css_files as $file): ?>
 <?php foreach($js_files as $file): ?>
 	<script src="<?php echo $file; ?>"></script>
 <?php endforeach; ?>
+
+
 <style type='text/css'>
+
+
 body
 {
 	font-family: Arial;
@@ -33,7 +37,8 @@ a:hover
 		<a href='<?php echo site_url('examples/orders_management')?>'>Orders</a> |
 		<a href='<?php echo site_url('examples/products_management')?>'>Products</a> |
 		<a href='<?php echo site_url('examples/offices_management')?>'>Offices</a> | 
-		<a href='<?php echo site_url('examples/employees_management')?>'>Employees</a> |		 
+		<a href='<?php echo site_url('examples/employees_management')?>'>Employees</a> |	
+			<a href='<?php echo site_url('examples/employees_disk_management')?>'>Employees_disk</a> |		 	 
 		<a href='<?php echo site_url('examples/film_management')?>'>Films</a> |
 		<a href='<?php echo site_url('examples/multigrids')?>'>Multigrid [BETA]</a>
 		

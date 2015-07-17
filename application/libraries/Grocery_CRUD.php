@@ -2692,21 +2692,18 @@ class grocery_CRUD_Layout extends grocery_CRUD_Model_Driver
 	protected function get_upload_file_disk_input($field_info, $value)
 	{
 	
-		$this->set_css($this->default_css_path.'/ui/simple/jquery-ui-1.8.10.custom.css');
 		$this->set_css($this->default_css_path.'/jquery_plugins/file_upload/file-uploader.css');
 		$this->set_css($this->default_css_path.'/jquery_plugins/file_upload/jquery.fileupload-ui.css');
 	
-		$this->set_js($this->default_javascript_path.'/jquery_plugins/jquery-ui-1.8.10.custom.min.js');
 		$this->set_js($this->default_javascript_path.'/jquery_plugins/tmpl.min.js');
 		$this->set_js($this->default_javascript_path.'/jquery_plugins/load-image.min.js');
 	
 		$this->set_js($this->default_javascript_path.'/jquery_plugins/jquery.iframe-transport.js');
-		$this->set_js($this->default_javascript_path.'/jquery_plugins/jquery.fileupload.js');
 		$this->set_js($this->default_javascript_path.'/jquery_plugins/config/jquery.fileupload.config.js');
 		$this->_inline_js("function open_elfinderxx(){ $('#elf').show();
 	
     var f = $('#elf').elfinder({
-        url:'".base_url()."adminx/elfinder_init',
+        url:'".base_url()."elfiles/elfinder_init',
         height: 490,
         docked: false,
         dialog: { width: 400, modal: true },
