@@ -62,12 +62,37 @@ class Examples extends CI_Controller {
 			$crud->required_fields('lastName');
 
 			$crud->set_field_upload('file_url','assets/uploads/files');
-
+			$crud->set_field_upload_disk('file_url','myuploads');
 			$output = $crud->render();
 
 			$this->_example_output($output);
 	}
 
+	
+	public function employees_disk_management()
+	{
+		$crud = new grocery_CRUD();
+	
+		$crud->set_theme('datatables');
+		$crud->set_table('employees');
+		$crud->set_relation('officeCode','offices','city');
+		$crud->display_as('officeCode','Office City');
+		$crud->set_subject('Employee');
+	
+		$crud->required_fields('lastName');
+
+		////$crud->set_field_upload('file_url','assets/uploads/files');
+		/**
+		 * Change In core Grocery Crud To Upload File Via Elfinder
+		 */
+		$crud->set_field_upload_disk('file_url','myuploads');
+		
+		////////////////////////////////
+		$output = $crud->render();
+	
+		$this->_example_output($output);
+	}
+	
 	public function customers_management()
 	{
 			$crud = new grocery_CRUD();
