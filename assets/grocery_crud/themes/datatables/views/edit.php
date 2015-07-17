@@ -12,15 +12,15 @@
 ?>
 <?php 
 //*JS PLUGIN ELFINDER*//
-$this->set_js('assets/elfinder/js/elfinder.min.js');
-$this->set_css('assets/elfinder/css/elfinder.min.css');
+$this->set_js('assets/grocery_crud/elfinder/js/elfinder.min.js');
+$this->set_css('assets/grocery_crud/elfinder/css/elfinder.min.css');
 ?>
 <script type='text/javascript'>
 	var base_url = '<?php echo base_url();?>';
 	var upload_a_file_string = '<?php echo $this->l('form_upload_a_file');?>';
 </script>
 <div id="elf"></div>
-<!-- End OF ALteration -->
+<!-- End OF Changes -->
 <div class='ui-widget-content ui-corner-all datatables'>
 	<h3 class="ui-accordion-header ui-helper-reset ui-state-default form-title">
 		<div class='floatL form-title-left'>

@@ -2703,14 +2703,14 @@ class grocery_CRUD_Layout extends grocery_CRUD_Model_Driver
 		$this->_inline_js("function open_elfinderxx(){ $('#elf').show();
 	
     var f = $('#elf').elfinder({
-        url:'".base_url()."elfiles/elfinder_init',
+        url:'".base_url()."examples/elfinder_init',
         height: 490,
         docked: false,
         dialog: { width: 400, modal: true },
         closeOnEditorCallback: true,
 		getFileCallback:function(url){
 	
-			    var url_c = url.replace('".base_url()."myuploads/', '');
+			    var url_c = url.replace('".base_url()."assets/uploads/files/', '');
 				 $('#fileurl').val(url_c);
 	
 				 $('#elf').hide();
