@@ -1,5 +1,10 @@
-Grocery CRUD
-=============
-Grocery CRUD is a PHP and Codeigniter Framework library that creates a full functional CRUD system without the need to customise JavaScript or CSS.
+#MEGA ADMIN
+MegaAdmin is a MySQL Database Management System 
 
-For more information, visit http://www.grocerycrud.com
+requires:
+Codeigniter 3.0
+GroceryCrud 1.5
+Elfinder 2.0
+Bootstrap 3.0
+
+
