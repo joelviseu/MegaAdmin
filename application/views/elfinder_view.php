@@ -13,7 +13,7 @@
 	<script>
 	$().ready(function(){
 		var elf = $('#elfinder').elfinder({
-			url:'<?php echo base_url("adminx/elfinder_init");?>',
+			url:'<?php echo base_url("elfiles/elfinder_init");?>',
 			height:460,
 		}).elfinder('instance');
 	});

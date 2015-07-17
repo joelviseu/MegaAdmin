@@ -31,7 +31,7 @@
 	tinyMCEPopup.onInit.add(FileBrowserDialogue.init, FileBrowserDialogue);
 	$().ready(function(){
 		var elf = $('#elfinder').elfinder({
-			url:'<?php echo base_url()."adminx/elfinder_init";?>',
+			url:'<?php echo base_url()."elfiles/elfinder_init";?>',
 			height:450,
 			getFileCallback:function(url){
 				
